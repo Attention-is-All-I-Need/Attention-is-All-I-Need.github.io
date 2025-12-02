@@ -7,8 +7,7 @@ first_name: Weize
 middle_name: ""
 last_name: Liu
 email: weizeliu1115@gmail.com
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Weize Liu is a Ph.D. student in Computer Science at the University of Maryland, College Park (UMD).
 footer_text: >
@@ -22,6 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
+nav_enabled: false # set to false to hide the navigation links in the top bar
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -263,8 +263,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Liu]
+  first_name: [Weize]
 
   style: apa
   locale: en
