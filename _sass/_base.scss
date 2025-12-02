@@ -248,7 +248,7 @@ ul.task-list input[type="checkbox"] {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: none;
   background-color: var(--global-bg-color);
   opacity: 0.95;
 }
@@ -748,9 +748,6 @@ footer.sticky-bottom {
 
     li {
       margin-bottom: 1rem;
-
-      .preview {
-      }
 
       .abbr {
         margin-bottom: 0.5rem;

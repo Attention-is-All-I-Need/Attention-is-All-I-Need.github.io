@@ -191,7 +191,9 @@
         <a href="{{ entry.paper }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
       {% endif %}
       {% if entry.project %}
-        <a href="{{ entry.project }}" class="btn btn-sm z-depth-0" role="button">Project</a>
+        <a href="{{ entry.project }}" class="btn btn-sm z-depth-0" role="button">
+          {{ entry.project_label | default: 'Project' }}
+        </a>
       {% endif %}
       {% if entry.code %}
         <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
