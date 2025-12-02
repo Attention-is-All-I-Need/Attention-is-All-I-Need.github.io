@@ -440,16 +440,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-started-a-research-internship-at-future-life-lab-taobao-amp-amp-tmall-group-alibaba-group",
+          title: 'Started a research internship at Future Life Lab, Taobao &amp;amp;amp; Tmall Group, Alibaba...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-completed-the-m-eng-in-computer-technology-at-zhejiang-university",
+          title: 'Completed the M.Eng. in Computer Technology at Zhejiang University.',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-started-the-computer-science-ph-d-program-at-the-university-of-maryland-college-park",
+          title: 'Started the Computer Science Ph.D. program at the University of Maryland, College Park....',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
