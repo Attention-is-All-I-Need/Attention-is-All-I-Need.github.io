@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started a research internship at Future Life Lab, Taobao & Tmall Group, Alibaba Group.
+Started a research internship at Future Life Lab, Alibaba Taobao & Tmall Group.
