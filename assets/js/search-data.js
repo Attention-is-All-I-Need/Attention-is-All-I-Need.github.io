@@ -440,8 +440,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-started-a-research-internship-at-future-life-lab-taobao-amp-amp-tmall-group-alibaba-group",
-          title: 'Started a research internship at Future Life Lab, Taobao &amp;amp;amp; Tmall Group, Alibaba...',
+            },},{id: "news-started-a-research-internship-at-future-life-lab-alibaba-taobao-amp-amp-tmall-group",
+          title: 'Started a research internship at Future Life Lab, Alibaba Taobao &amp;amp;amp; Tmall Group....',
           description: "",
           section: "News",},{id: "news-completed-the-m-eng-in-computer-technology-at-zhejiang-university",
           title: 'Completed the M.Eng. in Computer Technology at Zhejiang University.',
@@ -500,13 +500,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("mailto:%77%65%69%7A%65%6C%69%75%31%31%31%35@%67%6D%61%69%6C.%63%6F%6D", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
