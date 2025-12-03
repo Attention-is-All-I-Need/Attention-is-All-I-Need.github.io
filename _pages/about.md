@@ -12,7 +12,7 @@ profile:
     <p>College Park, MD</p>
 
 selected_papers: true
-social: false
+social: true
 
 announcements:
   enabled: true
@@ -27,4 +27,4 @@ latest_posts:
 
 I am a first-year Ph.D. student in Computer Science at the [University of Maryland, College Park](https://umd.edu/), advised by Prof. [Furong Huang](https://furong-huang.com/).
 
-My research interests lie in Large Language Models (LLMs) and Vision-Language Models (VLMs), specifically focusing on synthetic data, reasoning, and agents. My previous research has mainly centered on improving diverse capabilities of LLMs, especially reasoning, and on synthetic data. Currently, I am working on the agent capabilities of LLMs.
+My research interests lie in Large Language Models (LLMs) and Vision-Language Models (VLMs), specifically focusing on synthetic data, reasoning, and agents. My previous research has primarily focused on enhancing the diverse capabilities of LLMs (especially reasoning) and on synthetic data. I am currently working on improving the agent capabilities of LLMs.

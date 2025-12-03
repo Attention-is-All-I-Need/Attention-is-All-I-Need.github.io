@@ -9,17 +9,13 @@
   color: "#009f36"
 
 "arXiv":
-  url: https://arxiv.org/
   color: "#B31B1B"
 
 "NAACL":
-  url: https://naacl.org/
   color: "#005F9E"
 
 "EMNLP":
-  url: https://2024.emnlp.org/
   color: "#da5a32"
 
 "ACL":
-  url: https://www.aclweb.org/
   color: "#1d4a8a"
