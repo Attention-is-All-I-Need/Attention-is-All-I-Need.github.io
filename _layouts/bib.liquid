@@ -155,9 +155,9 @@
       {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
       {% if entry.abbr %}
-        {% capture entrytype %}<em>{{ entry.abbr }}</em>{% endcapture %}
+        {% capture entrytype %}{{ entry.abbr }}{% endcapture %}
       {% else %}
-        {% capture entrytype %}<em>{{ entry.booktitle }}</em>{% endcapture %}
+        {% capture entrytype %}{{ entry.booktitle }}{% endcapture %}
       {% endif %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
