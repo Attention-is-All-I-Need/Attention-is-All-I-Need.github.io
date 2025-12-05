@@ -502,6 +502,20 @@ ninja.data = [{
           window.open("mailto:%77%65%69%7A%65%6C%69%75%31%31%31%35@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/weize-liu-55908827b", "_blank");
+        },
+      },{
+        id: 'social-xiaohongshu',
+        title: 'Xiaohongshu',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://xhslink.com/m/8QFWowlm127", "_blank");
+        },
+      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
