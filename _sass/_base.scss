@@ -485,6 +485,49 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.wechat-modal-content {
+  position: relative;
+  margin: 5% auto;
+  background-color: var(--global-bg-color);
+  padding: 1.5rem;
+  width: min(90%, 420px);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.wechat-modal-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.xhs-link-block {
+  text-align: left;
+}
+
+.xhs-link-block label {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+}
+
+.xhs-link-block input {
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--global-divider-color);
+  background-color: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  font-size: 0.9rem;
+}
+
+.xhs-link-block a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
 // Footer
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);

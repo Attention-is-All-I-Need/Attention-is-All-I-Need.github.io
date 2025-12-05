@@ -47,10 +47,22 @@
     {% when 'linkedin_username' %}
       <a href="https://www.linkedin.com/in/{{ social[1] }}" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
     {% when 'xiaohongshu' %}
-      <a href="{{ social[1].url }}" title="Xiaohongshu" target="_blank" rel="noopener"><i class="fa-solid fa-book"></i></a>
-      <a id="XHSBtn" title="Xiaohongshu QR"><i class="fa-solid fa-qrcode"></i></a>
+      <a id="XHSBtn" title="Xiaohongshu"><i class="fa-solid fa-book"></i></a>
       <div id="XHSMod" class="wechat-modal">
-        <img src="{{ social[1].qr | prepend: 'assets/img/' | relative_url }}" alt="Xiaohongshu QR" id="XHSQR">
+        <div class="wechat-modal-content">
+          <img src="{{ social[1].qr | prepend: 'assets/img/' | relative_url }}" alt="Xiaohongshu QR" id="XHSQR">
+          <div class="xhs-link-block">
+            <label for="xhs-link-input">Link</label>
+            <input
+              id="xhs-link-input"
+              type="text"
+              value="{{ social[1].url }}"
+              readonly
+              onclick="this.select();"
+            >
+            <a href="{{ social[1].url }}" target="_blank" rel="noopener">{{ social[1].url }}</a>
+          </div>
+        </div>
       </div>
       <script defer src="{{ '/assets/js/xiaohongshu.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
     {% when 'mastodon_username' %}
