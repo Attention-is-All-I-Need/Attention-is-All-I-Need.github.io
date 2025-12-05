@@ -496,11 +496,11 @@ ul.task-list input[type="checkbox"] {
 }
 
 .wechat-modal-content img {
-  max-width: 85%;
-  width: 85%;
-  max-height: 420px;
+  display: block;
+  margin: 0 auto 1rem;
+  width: 100%;
+  max-width: 420px;
   height: auto;
-  margin-bottom: 1rem;
   border-radius: 8px;
 }
 
