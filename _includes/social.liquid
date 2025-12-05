@@ -50,18 +50,8 @@
       <a id="XHSBtn" title="Xiaohongshu"><i class="fa-solid fa-book"></i></a>
       <div id="XHSMod" class="wechat-modal">
         <div class="wechat-modal-content">
-          <img src="{{ social[1].qr | prepend: 'assets/img/' | relative_url }}" alt="Xiaohongshu QR" id="XHSQR">
-          <div class="xhs-link-block">
-            <label for="xhs-link-input">Link</label>
-            <input
-              id="xhs-link-input"
-              type="text"
-              value="{{ social[1].url }}"
-              readonly
-              onclick="this.select();"
-            >
-            <a href="{{ social[1].url }}" target="_blank" rel="noopener">{{ social[1].url }}</a>
-          </div>
+          <img src="{{ social[1].qr | prepend: 'assets/img/' | relative_url }}" alt="Xiaohongshu QR" id="XHSQR" class="xhs-qr-img">
+          <a href="{{ social[1].url }}" class="xhs-link" target="_blank" rel="noopener">Rednote link</a>
         </div>
       </div>
       <script defer src="{{ '/assets/js/xiaohongshu.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
