@@ -46,6 +46,13 @@
       <a href="https://leetcode.com/u/{{ social[1] }}/" target="_blank" title="LeetCode"><i class="si si-leetcode"></i></a>
     {% when 'linkedin_username' %}
       <a href="https://www.linkedin.com/in/{{ social[1] }}" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    {% when 'xiaohongshu' %}
+      <a href="{{ social[1].url }}" title="Xiaohongshu" target="_blank" rel="noopener"><i class="fa-solid fa-book"></i></a>
+      <a id="XHSBtn" title="Xiaohongshu QR"><i class="fa-solid fa-qrcode"></i></a>
+      <div id="XHSMod" class="wechat-modal">
+        <img src="{{ social[1].qr | prepend: 'assets/img/' | relative_url }}" alt="Xiaohongshu QR" id="XHSQR">
+      </div>
+      <script defer src="{{ '/assets/js/xiaohongshu.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
     {% when 'mastodon_username' %}
       <a rel="me" href="https://{{ social[1] }}" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
     {% when 'medium_username' %}
