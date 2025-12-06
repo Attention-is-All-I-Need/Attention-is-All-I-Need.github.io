@@ -502,6 +502,13 @@ ninja.data = [{
           window.open("mailto:%77%65%69%7A%65%6C%69%75%31%31%31%35@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
+        id: 'social-x',
+        title: 'X',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://twitter.com/WeizeLiu1115", "_blank");
+        },
+      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
