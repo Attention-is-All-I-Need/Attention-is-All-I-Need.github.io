@@ -440,8 +440,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-started-a-research-internship-at-alibaba-group-future-life-lab-taobao-amp-amp-tmall-group",
-          title: 'Started a research internship at Alibaba Group (Future Life Lab, Taobao &amp;amp;amp; Tmall...',
+            },},{id: "news-started-a-research-internship-at-alibaba-group-enhancing-the-reasoning-capabilities-of-qwen3-models-through-data-synthesis-techniques",
+          title: 'Started a research internship at Alibaba Group, enhancing the reasoning capabilities of Qwen3...',
           description: "",
           section: "News",},{id: "news-completed-the-m-eng-in-computer-technology-at-zhejiang-university",
           title: 'Completed the M.Eng. in Computer Technology at Zhejiang University.',
