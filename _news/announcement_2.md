@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Completed the M.Eng. in Computer Technology at Zhejiang University.
+Completed the M.Eng. in Computer Technology at [Zhejiang University](https://www.zju.edu.cn/english/).

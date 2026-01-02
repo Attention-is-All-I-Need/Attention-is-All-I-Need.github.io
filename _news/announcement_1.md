@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started the Computer Science Ph.D. program at the University of Maryland, College Park.
+Started the [Computer Science Ph.D. program](https://www.cs.umd.edu/) at the University of Maryland, College Park.

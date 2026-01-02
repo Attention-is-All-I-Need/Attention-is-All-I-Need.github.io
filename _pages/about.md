@@ -27,4 +27,6 @@ latest_posts:
 
 I am a first-year Ph.D. student in Computer Science at the [University of Maryland, College Park](https://umd.edu/), advised by Prof. [Furong Huang](https://furong-huang.com/).
 
-My research interests lie in Large Language Models (LLMs) and Vision-Language Models (VLMs), specifically focusing on synthetic data, reasoning, and agents. My previous research has primarily focused on enhancing the diverse capabilities of LLMs (especially reasoning) and on synthetic data. I am currently working on improving the agent capabilities of LLMs.
+My research interests lie in improving foundation models, particularly Large Language Models (LLMs), with a focus on reasoning, agentic capabilities, synthetic data, and reinforcement learning. My previous research experience has primarily focused on enhancing the reasoning, reliability, interpretability, and efficiency of LLMs through post-training (SFT, RL) and data synthesis techniques. I am currently continuing my work to improve the reasoning and agentic capabilities of LLMs by developing better algorithms and data.
+
+I am actively seeking a research internship for summer 2026 (based in the United States) and welcome any referrals or connections. I am also open to research collaborations; if you are interested in working together, please feel free to reach out via [email](mailto:weizeliu1115@gmail.com).

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started a research internship at Alibaba Group (Future Life Lab, Taobao & Tmall Group).
+Started a research internship at [Alibaba Group](https://www.alibabagroup.com/en-US/), enhancing the reasoning capabilities of Qwen3 models through data synthesis techniques.
