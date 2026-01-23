@@ -27,6 +27,6 @@ latest_posts:
 
 I am a first-year Ph.D. student in Computer Science at the [University of Maryland, College Park](https://umd.edu/), advised by Prof. [Furong Huang](https://furong-huang.com/).
 
-My research focuses on improving Large Language Models (LLMs), with an emphasis on reasoning, agentic capabilities, reliability, and efficiency, through post-training (SFT, RL) and data synthesis techniques.
+My research focuses on improving **large language models (LLMs)**, with an emphasis on **reasoning**, **agentic capabilities**, **reliability**, and **efficiency**, by developing advanced **post-training (SFT, RL)** and **data synthesis** methods.
 
 I am actively seeking a research internship for summer 2026 (based in the United States) and welcome any referrals or connections. I am also open to research collaborations; if you are interested in working together, please feel free to reach out via [email](mailto:weizeliu1115@gmail.com).
