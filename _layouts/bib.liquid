@@ -181,11 +181,19 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
+    {% assign venue_note = "" %}
+    {% if entry.booktitle and entry.booktitle contains "Findings" %}
+      {% assign venue_note = " (Findings)" %}
+    {% elsif entry.journal and entry.journal contains "Findings" %}
+      {% assign venue_note = " (Findings)" %}
+    {% endif %}
     {% capture periodical %}
       {% if entrytype_text != "" %}
-        <em>{{ entrytype_text }}{% if entryyear != "" %} {{ entryyear }}{% endif %}</em>
+        <em>{{ entrytype_text }}{% if entryyear != "" %} {{ entryyear }}{% endif %}{{ venue_note }}</em>
       {% else %}
-        {% if entryyear != "" %}<em>{{ entryyear }}</em>{% endif %}
+        {% if entryyear != "" %}
+          <em>{{ entryyear }}</em>
+        {% endif %}
       {% endif %}
     {% endcapture %}
     <div class="periodical">
