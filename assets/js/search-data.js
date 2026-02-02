@@ -523,7 +523,7 @@ ninja.data = [{
         title: 'Xiaohongshu',
         section: 'Socials',
         handler: () => {
-          window.open("https://xhslink.com/m/8QFWowlm127", "_blank");
+          window.open("https://xhslink.com/m/7lh33gHQoe", "_blank");
         },
       },{
       id: 'light-theme',
