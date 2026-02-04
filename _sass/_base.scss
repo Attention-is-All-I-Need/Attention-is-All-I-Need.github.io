@@ -54,24 +54,43 @@ details.pub-details {
   margin-top: 0.6rem;
 }
 
-details.pub-details summary {
+.pub-details-summary {
   cursor: pointer;
   color: var(--global-text-color-light);
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1rem; // match author font size
   list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
-details.pub-details summary::-webkit-details-marker {
+.pub-details-summary::-webkit-details-marker {
   display: none;
 }
 
-details.pub-details summary::marker {
+.pub-details-summary::marker {
   content: '';
 }
 
-details.pub-details[open] summary {
+.pub-details-summary::before {
+  content: '▸';
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+details.pub-details[open] .pub-details-summary::before {
+  transform: rotate(90deg);
+}
+
+details.pub-details[open] .pub-details-summary {
   margin-bottom: 0.35rem;
+}
+
+.pub-details-body {
+  color: var(--global-text-color-light);
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .pub-details-body ul {
@@ -97,6 +116,22 @@ details.pub-details[open] summary {
 .pub-venue-under-author {
   margin-top: 0.25rem;
   margin-bottom: 0.35rem;
+}
+
+.pub-venue-under-author .badge {
+  background-color: transparent;
+  color: var(--global-theme-color);
+  border: 1px solid var(--global-theme-color);
+  font-weight: 600;
+}
+
+.pub-venue-under-author .badge a,
+.pub-venue-under-author .badge span {
+  color: inherit;
+}
+
+.pub-entry {
+  margin-bottom: 2rem;
 }
 
 .table-dark {
