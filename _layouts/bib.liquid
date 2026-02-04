@@ -4,6 +4,12 @@
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
+        {% assign venue_note = "" %}
+        {% if entry.booktitle and entry.booktitle contains "Findings" %}
+          {% assign venue_note = " (Findings)" %}
+        {% elsif entry.journal and entry.journal contains "Findings" %}
+          {% assign venue_note = " (Findings)" %}
+        {% endif %}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
           {% if site.data.venues[entry.abbr].color != blank %}
@@ -16,13 +22,15 @@
             {% endif -%}
           >
             {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+              <a href="{{ site.data.venues[entry.abbr].url }}">
+                {{ entry.abbr }}{% if entry.year %} {{ entry.year }}{% endif %}{{ venue_note }}
+              </a>
             {% else %}
-              <div>{{- entry.abbr -}}</div>
+              <div>{{ entry.abbr }}{% if entry.year %} {{ entry.year }}{% endif %}{{ venue_note }}</div>
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          <abbr class="badge rounded w-100">{{ entry.abbr }}{% if entry.year %} {{ entry.year }}{% endif %}{{ venue_note }}</abbr>
         {% endif %}
       {% endif %}
       {% if entry.preview %}
@@ -196,9 +204,11 @@
         {% endif %}
       {% endif %}
     {% endcapture %}
-    <div class="periodical">
-      {{ periodical | strip }}
-    </div>
+    {% unless entry.abbr %}
+      <div class="periodical">
+        {{ periodical | strip }}
+      </div>
+    {% endunless %}
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
@@ -277,6 +287,16 @@
         {% endif %}
       {% endif %}
     </div>
+
+    {% if entry.details %}
+      <details class="pub-details">
+        <summary>Show details</summary>
+        <div class="pub-details-body">
+          {{ entry.details | markdownify }}
+        </div>
+      </details>
+    {% endif %}
+
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = false %}
       {% if entry.altmetric and entry.altmetric != 'false' %}

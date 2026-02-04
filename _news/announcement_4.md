@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-A first-author [paper](https://attention-is-all-i-need.github.io/Design-Logic-Reasoning/) was accepted to ICLR 2026! Thanks to all co-authors. See you in Brazil! Feel free to say hi and chat with me!
+A [paper](https://attention-is-all-i-need.github.io/Design-Logic-Reasoning/) was accepted to ICLR 2026! Thanks to all co-authors. See you in Brazil! Feel free to say hi and chat with me!
 

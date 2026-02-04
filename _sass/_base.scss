@@ -49,6 +49,25 @@ table.table a {
   }
 }
 
+// Publications: details expander
+details.pub-details {
+  margin-top: 0.6rem;
+}
+
+details.pub-details summary {
+  cursor: pointer;
+  color: var(--global-theme-color);
+  font-weight: 600;
+}
+
+details.pub-details[open] summary {
+  margin-bottom: 0.4rem;
+}
+
+.pub-details-body ul {
+  margin-bottom: 0;
+}
+
 .table-dark {
   background-color: transparent;
   &.table-bordered {
