@@ -95,7 +95,6 @@ details.pub-details[open] .pub-details-summary {
 
 .pub-details-body * {
   color: var(--global-text-color-light) !important;
-  font-weight: 400 !important;
 }
 
 .pub-details-body ul {
@@ -106,10 +105,14 @@ details.pub-details[open] .pub-details-summary {
 
 .pub-details-body li,
 .pub-details-body p,
-.pub-details-body span,
-.pub-details-body strong {
+.pub-details-body span {
   color: var(--global-text-color-light) !important;
   font-weight: 400 !important;
+}
+
+.pub-details-body strong {
+  color: var(--global-text-color-light) !important;
+  font-weight: 600;
 }
 
 .pub-details-body li {
