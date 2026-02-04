@@ -94,12 +94,18 @@ details.pub-details[open] .pub-details-summary {
 }
 
 .pub-details-body ul {
+  list-style-type: disc;
   margin: 0.25rem 0 0;
   padding-left: 1.2rem;
 }
 
 .pub-details-body li {
   margin-bottom: 0.35rem;
+  font-weight: 400;
+}
+
+.pub-details-body li::marker {
+  color: var(--global-text-color);
 }
 
 // Publication venue image (left column)
@@ -118,16 +124,15 @@ details.pub-details[open] .pub-details-summary {
   margin-bottom: 0.35rem;
 }
 
-.pub-venue-under-author .badge {
-  background-color: transparent;
-  color: var(--global-theme-color);
-  border: 1px solid var(--global-theme-color);
+.pub-venue-badge {
+  color: var(--global-text-color) !important;
+  border: none;
   font-weight: 600;
 }
 
-.pub-venue-under-author .badge a,
-.pub-venue-under-author .badge span {
-  color: inherit;
+.pub-venue-badge a,
+.pub-venue-badge span {
+  color: inherit !important;
 }
 
 .pub-entry {
