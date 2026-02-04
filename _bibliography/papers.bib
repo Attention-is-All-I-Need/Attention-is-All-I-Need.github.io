@@ -8,7 +8,13 @@
   journal={ICLR},
   year={2026},
   note={* Equal contribution},
-  details={- Post-training (and even mid-training) relies heavily on exam-style data, yet many low-resource disciplines still lack sufficient high-quality questions. Existing data synthesis methods face two major challenges: query-centric approaches are limited by seed-pool coverage and model bias, while document-centric approaches lack control over question difficulty. We propose DESIGNER, a design-logic-guided reasoning data synthesis pipeline for synthesizing multidisciplinary reasoning questions from raw corpora.\n- The central insight is the notion of \"Design Logic\"—a form of reusable meta-knowledge that encapsulates how human experts transform knowledge points into complex exam questions. Design logic enables LLMs to generate new questions with the same complex reasoning patterns from entirely different source texts, with explicit control over difficulty, diversity, and question types. We extracted over 120,000 design logics from filtered human-authored multidisciplinary question banks using LLMs.\n- We designed a two-stage retrieve-and-generate mechanism to precisely match design logics with raw corpora that underwent our multi-dimensional labeling and filtering process, synthesizing two large-scale datasets spanning 75 disciplines: DLR-Book (3.04M questions from book corpora) and DLR-Web (1.66M questions from web corpora).\n- Data analysis shows that questions synthesized by our method exhibit significantly greater difficulty and diversity compared to existing datasets. SFT experiments on the Qwen3 and Llama3 model families demonstrate that our data substantially enhances multidisciplinary reasoning, outperforming baseline datasets. Notably, SFT on base models using only our data can even surpass officially released post-trained final models.},
+  preview={designer.png},
+  details={
+    - Post-training (and even mid-training) relies heavily on exam-style data, yet many low-resource disciplines still lack sufficient high-quality questions. Existing data synthesis methods face two major challenges: query-centric approaches are limited by seed-pool coverage and model bias, while document-centric approaches lack control over question difficulty. We propose DESIGNER, a design-logic-guided reasoning data synthesis pipeline for synthesizing multidisciplinary reasoning questions from raw corpora.
+    - The central insight is the notion of “Design Logic”—a form of reusable meta-knowledge that encapsulates how human experts transform knowledge points into complex exam questions. Design logic enables LLMs to generate new questions with the same complex reasoning patterns from entirely different source texts, with explicit control over difficulty, diversity, and question types. We extracted over 120,000 design logics from filtered human-authored multidisciplinary question banks using LLMs.
+    - We designed a two-stage retrieve-and-generate mechanism to precisely match design logics with raw corpora that underwent our multi-dimensional labeling and filtering process, synthesizing two large-scale datasets spanning 75 disciplines: DLR-Book (3.04M questions from book corpora) and DLR-Web (1.66M questions from web corpora).
+    - Data analysis shows that questions synthesized by our method exhibit significantly greater difficulty and diversity compared to existing datasets. SFT experiments on the Qwen3 and Llama3 model families demonstrate that our data substantially enhances multidisciplinary reasoning, outperforming baseline datasets. Notably, SFT on base models using only our data can even surpass officially released post-trained final models.
+  },
   paper={https://arxiv.org/abs/2508.12726},
   project={https://attention-is-all-i-need.github.io/Design-Logic-Reasoning/},
   project_label={Project Page},
@@ -21,7 +27,12 @@
   author={Liu, Weize and Li, Guocong and Zhang, Kai and Du, Bang and Chen, Qiyuan and Hu, Xuming and Xu, Hongxia and Chen, Jintai and Wu, Jian},
   booktitle={NAACL},
   year={2024},
-  details={- We propose a data distillation (data synthesis) approach that distills self-evaluation capability from LLMs into small language models (SLMs). By learning from analysis and evaluation of CoT correctness, SLMs better understand why reasoning is correct or incorrect, improving answer accuracy and reliability.\n- To overcome randomness and limitations of generated synthetic data, we further distill diverse chains of thought along with multiple self-evaluations, enabling SLMs to learn more comprehensive reasoning paths and thinking spaces of LLMs.\n- Comprehensive experiments show our method enables SLMs to learn self-evaluation and more comprehensive thinking, significantly improving performance and reliability and outperforming prior CoT distillation methods—especially in resource-constrained settings.},
+  preview={naacl-2024.png},
+  details={
+    - We propose a data distillation (data synthesis) approach that distills self-evaluation capability from LLMs into small language models (SLMs). By learning from analysis and evaluation of CoT correctness, SLMs better understand why reasoning is correct or incorrect, improving answer accuracy and reliability.
+    - To overcome randomness and limitations of generated synthetic data, we further distill diverse chains of thought along with multiple self-evaluations, enabling SLMs to learn more comprehensive reasoning paths and thinking spaces of LLMs.
+    - Comprehensive experiments show our method enables SLMs to learn self-evaluation and more comprehensive thinking, significantly improving performance and reliability and outperforming prior CoT distillation methods—especially in resource-constrained settings.
+  },
   paper={https://aclanthology.org/2024.naacl-long.376/},
   code={https://github.com/Attention-is-All-I-Need/Mind-s-Mirror-Distilling-LLM},
   selected={true}
@@ -33,7 +44,12 @@
   author={Liu, Weize and Xu, Yinlong and Xu, Hongxia and Chen, Jintai and Hu, Xuming and Wu, Jian},
   booktitle={EMNLP},
   year={2024},
-  details={- To analyze similarities and differences in internal neuron activities when LLMs process different languages, we convert dense LLMs into fine-grained MoE architectures and visualize multilingual activation patterns via expert activation frequency heatmaps.\n- Across model families, sizes, and variants, we analyze high-frequency activated neurons per language, multilingual shared neurons, relationships to language families, and the impact of instruction tuning on activation patterns.\n- We further leverage discovered activation-frequency differences to guide sparse activation and pruning during inference, substantially outperforming random expert pruning and sometimes even exceeding the original unpruned models in some languages.},
+  preview={emnlp-2024.png},
+  details={
+    - To analyze similarities and differences in internal neuron activities when LLMs process different languages, we convert dense LLMs into fine-grained MoE architectures and visualize multilingual activation patterns via expert activation frequency heatmaps.
+    - Across model families, sizes, and variants, we analyze high-frequency activated neurons per language, multilingual shared neurons, relationships to language families, and the impact of instruction tuning on activation patterns.
+    - We further leverage discovered activation-frequency differences to guide sparse activation and pruning during inference, substantially outperforming random expert pruning and sometimes even exceeding the original unpruned models in some languages.
+  },
   paper={https://aclanthology.org/2024.emnlp-main.662/},
   selected={true}
 }
@@ -44,7 +60,13 @@
   author={Li, Guocong and Liu, Weize and Wu, Yihang and Wang, Ping and Huang, Shuaihan and Xu, Hongxia and Wu, Jian},
   booktitle={ACL Findings},
   year={2025},
-  details={- Users often submit inaccurate queries when using LLMs, sometimes containing misleading information. We propose a three-stage post-training fine-tuning method that trains LLMs to detect and correct misleading information, improving accuracy and robustness and reducing the negative impact of misinformation.\n- The three stages include: (1) identify whether queries contain misleading information; (2) correct misleading information using internal or external knowledge; (3) generate accurate and reliable answers based on corrected queries.\n- We construct two datasets containing misleading information and find that some commonly used benchmarks also contain misleading questions; removing them significantly improves model accuracy, while our method maintains robust responses.\n- Experiments across multiple datasets demonstrate improved accuracy and factuality, enhanced hallucination detection, and reduced hallucinations—especially when queries contain misleading information.},
+  preview={acl-2025.png},
+  details={
+    - Users often submit inaccurate queries when using LLMs, sometimes containing misleading information. We propose a three-stage post-training fine-tuning method that trains LLMs to detect and correct misleading information, improving accuracy and robustness and reducing the negative impact of misinformation.
+    - The three stages include: (1) identify whether queries contain misleading information; (2) correct misleading information using internal or external knowledge; (3) generate accurate and reliable answers based on corrected queries.
+    - We construct two datasets containing misleading information and find that some commonly used benchmarks also contain misleading questions; removing them significantly improves model accuracy, while our method maintains robust responses.
+    - Experiments across multiple datasets demonstrate improved accuracy and factuality, enhanced hallucination detection, and reduced hallucinations—especially when queries contain misleading information.
+  },
   paper={https://aclanthology.org/2025.findings-acl.65/},
   selected={true}
 }

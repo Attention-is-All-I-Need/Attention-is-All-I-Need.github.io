@@ -49,23 +49,54 @@ table.table a {
   }
 }
 
-// Publications: details expander
+// Publications: details expander (subtle)
 details.pub-details {
   margin-top: 0.6rem;
 }
 
 details.pub-details summary {
   cursor: pointer;
-  color: var(--global-theme-color);
-  font-weight: 600;
+  color: var(--global-text-color-light);
+  font-weight: 400;
+  font-size: 1rem; // match author font size
+  list-style: none;
+}
+
+details.pub-details summary::-webkit-details-marker {
+  display: none;
+}
+
+details.pub-details summary::marker {
+  content: '';
 }
 
 details.pub-details[open] summary {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
 }
 
 .pub-details-body ul {
-  margin-bottom: 0;
+  margin: 0.25rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.pub-details-body li {
+  margin-bottom: 0.35rem;
+}
+
+// Publication venue image (left column)
+.pub-venue-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pub-venue-img-placeholder {
+  width: 100%;
+  height: 64px;
+}
+
+.pub-venue-under-author {
+  margin-top: 0.25rem;
+  margin-bottom: 0.35rem;
 }
 
 .table-dark {
