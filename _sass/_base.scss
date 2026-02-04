@@ -88,9 +88,9 @@ details.pub-details[open] .pub-details-summary {
 }
 
 .pub-details-body {
-  color: var(--global-text-color-light);
+  color: var(--global-text-color-light) !important;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 .pub-details-body ul {
@@ -99,9 +99,16 @@ details.pub-details[open] .pub-details-summary {
   padding-left: 1.2rem;
 }
 
+.pub-details-body li,
+.pub-details-body p,
+.pub-details-body span,
+.pub-details-body strong {
+  color: var(--global-text-color-light) !important;
+  font-weight: 400 !important;
+}
+
 .pub-details-body li {
   margin-bottom: 0.35rem;
-  font-weight: 400;
 }
 
 .pub-details-body li::marker {
@@ -126,7 +133,7 @@ details.pub-details[open] .pub-details-summary {
 
 .pub-venue-badge {
   color: var(--global-text-color) !important;
-  border: none;
+  border: none !important;
   font-weight: 600;
 }
 
