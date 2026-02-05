@@ -142,7 +142,7 @@ details.pub-details[open] .pub-details-summary {
 .pub-venue-badge {
   color: var(--global-text-color) !important;
   border: none !important;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.9rem;
 }
 
@@ -157,6 +157,12 @@ details.pub-details[open] .pub-details-summary {
 
 .selected-publications-title {
   margin-top: 2.5rem;
+}
+
+.selected-publications-note {
+  margin: 0.25rem 0 0.75rem;
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
 }
 
 @media (min-width: 576px) {

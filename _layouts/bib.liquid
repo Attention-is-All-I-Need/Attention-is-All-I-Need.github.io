@@ -216,9 +216,11 @@
         {{ periodical | strip }}
       </div>
     {% endunless %}
-    <div class="periodical">
-      {{ entry.note | strip }}
-    </div>
+    {% if entry.note and entry.note != "* Equal contribution" %}
+      <div class="periodical">
+        {{ entry.note | strip }}
+      </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
