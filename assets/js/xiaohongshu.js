@@ -1,15 +1,22 @@
-var xhsModal = document.getElementById("XHSMod");
-var xhsBtn = document.getElementById("XHSBtn");
+function bindXhsModal(triggerId, modalId) {
+  var trigger = document.getElementById(triggerId);
+  var modal = document.getElementById(modalId);
 
-if (xhsBtn && xhsModal) {
-  xhsBtn.addEventListener("click", function () {
-    xhsModal.style.display = "block";
+  if (!trigger || !modal) {
+    return;
+  }
+
+  trigger.addEventListener("click", function () {
+    modal.style.display = "block";
   });
 
-  window.addEventListener("click", function (event) {
-    if (event.target === xhsModal) {
-      xhsModal.style.display = "none";
+  modal.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
     }
   });
 }
+
+bindXhsModal("XHSBtn", "XHSMod");
+bindXhsModal("XHSBtnInline", "XHSModInline");
 
