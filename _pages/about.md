@@ -33,26 +33,26 @@ I am actively seeking a research internship for summer 2026 and welcome any refe
 
 <div class="follow-link-grid">
   <a
-    class="follow-link-button"
+    class="follow-link-button follow-link-button-x"
     href="https://x.com/intent/follow?screen_name={{ site.data.socials.x_username }}"
     target="_blank"
     rel="noopener noreferrer"
   >
     <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
-    <span>My X</span>
+    <span>X</span>
   </a>
   <a
-    class="follow-link-button"
+    class="follow-link-button follow-link-button-linkedin"
     href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}"
     target="_blank"
     rel="noopener noreferrer"
   >
     <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-    <span>My LinkedIn</span>
+    <span>LinkedIn</span>
   </a>
-  <button id="XHSBtnInline" class="follow-link-button" type="button">
+  <button id="XHSBtnInline" class="follow-link-button follow-link-button-rednote" type="button">
     <i class="fa-solid fa-book" aria-hidden="true"></i>
-    <span>My Rednote</span>
+    <span>Rednote</span>
   </button>
 </div>
 
