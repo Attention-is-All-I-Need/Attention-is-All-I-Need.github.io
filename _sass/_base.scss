@@ -632,17 +632,28 @@ ul.task-list input[type="checkbox"] {
 }
 
 .xhs-link {
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.2rem;
+  border: 2px solid #d7263d;
+  border-radius: 999px;
+  background-color: #fff5f7;
+  font-size: 1.15rem;
+  font-weight: 700;
   color: #d7263d;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
+  line-height: 1.2;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .xhs-link:hover {
-  color: #ff4d68;
-  border-bottom-color: #ff4d68;
+  color: #ffffff;
+  background-color: #d7263d;
+  transform: translateY(-1px);
 }
 
 .follow-link-grid {
