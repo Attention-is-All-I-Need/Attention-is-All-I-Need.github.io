@@ -29,7 +29,7 @@ I am a first-year Ph.D. student in Computer Science at the [University of Maryla
 
 My research focuses on **large language models (LLMs)**, particularly on improving models' **reasoning**, **agentic capabilities**, **reliability**, and **efficiency** by developing advanced **post-training (SFT, RL)** and **data synthesis** methods.
 
-I am actively seeking a research internship for summer 2026 and welcome any referrals or connections. I am also open to research collaborations; if you are interested in working together, please feel free to reach out via [email](mailto:weizeliu1115@gmail.com).
+I am open to research collaborations; if you are interested in working together, please feel free to reach out via [email](mailto:weizeliu1115@gmail.com).
 
 {% comment %}
   The X / LinkedIn / Rednote follow buttons are temporarily hidden.
