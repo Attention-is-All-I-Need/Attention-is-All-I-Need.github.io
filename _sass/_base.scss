@@ -155,6 +155,20 @@ details.pub-details[open] .pub-details-summary {
   margin-bottom: 2rem;
 }
 
+// Justify the about-page intro only on wider viewports; on narrow screens the
+// stretched spacing produces large gaps between words.
+@media (min-width: 576px) {
+  .about-intro p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+// Keeps hyphenated compound terms from splitting across lines.
+.nowrap {
+  white-space: nowrap;
+}
+
 .selected-publications-title {
   margin-top: 2.5rem;
 }
