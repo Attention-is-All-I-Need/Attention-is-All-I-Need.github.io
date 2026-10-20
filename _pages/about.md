@@ -25,7 +25,7 @@ latest_posts:
   limit: 3
 ---
 
-I am a first-year Ph.D. student in Computer Science at the [University of Maryland, College Park](https://umd.edu/), advised by Prof. [Furong Huang](https://furong-huang.com/).
+I am a second-year Ph.D. student in Computer Science at the [University of Maryland, College Park](https://umd.edu/), advised by Prof. [Furong Huang](https://furong-huang.com/).
 
 My research focuses on **foundation models** and **agentic systems** built around **large language models (LLMs)**, including **data synthesis**, **model training algorithms**, and **agent harnesses**.
 
