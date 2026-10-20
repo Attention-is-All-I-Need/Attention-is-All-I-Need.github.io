@@ -27,7 +27,9 @@ latest_posts:
 
 I am a first-year Ph.D. student in Computer Science at the [University of Maryland, College Park](https://umd.edu/), advised by Prof. [Furong Huang](https://furong-huang.com/).
 
-My research focuses on **large language models (LLMs)**, particularly on improving models' **reasoning** and **agentic capabilities** by developing advanced <strong class="nowrap">pre-training</strong>, <strong class="nowrap">mid-training</strong>, <strong><span class="nowrap">post-training</span> (SFT, RL)</strong>, and **data synthesis** methods.
+My research focuses on **foundation models** and **agentic systems** built around **large language models (LLMs)**, including **data synthesis**, **model training algorithms**, and **agent harnesses**.
+
+For foundation models, I have experience in <strong class="nowrap">pre-training</strong> and <strong class="nowrap">mid-training</strong> at Hy Team, and in <strong class="nowrap">post-training</strong> at Token Foundry Team.
 
 I am open to research collaborations; if you are interested in working together, please feel free to reach out via [email](mailto:weizeliu1115@gmail.com).
 

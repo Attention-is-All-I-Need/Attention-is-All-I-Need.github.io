@@ -370,6 +370,15 @@ ul.task-list input[type="checkbox"] {
       }
     }
   }
+
+  // Wider gutter so the intro text does not run up against the photo.
+  .profile.float-right {
+    margin-left: 2rem;
+  }
+
+  .profile.float-left {
+    margin-right: 2rem;
+  }
 }
 
 .post-description {
