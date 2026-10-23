@@ -188,6 +188,8 @@ details.pub-details[open] .pub-details-summary {
   .pub-entry .pub-entry-content {
     flex: 0 0 80%;
     max-width: 80%;
+    // Offset the title's font leading to align its visible top with the thumbnail.
+    margin-top: -0.4em;
   }
 }
 
