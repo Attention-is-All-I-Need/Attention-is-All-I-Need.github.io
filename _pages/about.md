@@ -29,7 +29,7 @@ I am a second-year Ph.D. student in Computer Science at the [University of Maryl
 
 My research focuses on **foundation models** and **agentic systems** built around **large language models (LLMs)**, including **data synthesis**, **model training algorithms**, and **agent harnesses**.
 
-For foundation models, I have experience in <strong class="nowrap">pre-training</strong> and <strong class="nowrap">mid-training</strong> at <a href="https://hy.tencent.ai/" target="_blank" rel="noopener noreferrer">Hy Team</a>, and in <strong class="nowrap">post-training</strong> at <a href="https://x.com/FutureLab2025" target="_blank" rel="noopener noreferrer">ATH FutureLivingLab</a>.
+For foundation models, I have experience in <strong class="nowrap">pre-training</strong> and <strong class="nowrap">mid-training</strong> at <a href="https://hy.tencent.ai/" target="_blank" rel="noopener noreferrer">Hy</a>, and in <strong class="nowrap">post-training</strong> at <a href="https://x.com/FutureLab2025" target="_blank" rel="noopener noreferrer">ATH Future Living Lab</a>.
 
 I am open to research collaborations; if you are interested in working together, please feel free to reach out via [email](mailto:weizeliu1115@gmail.com).
 

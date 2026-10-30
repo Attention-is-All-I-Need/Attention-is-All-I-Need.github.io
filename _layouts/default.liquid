@@ -16,7 +16,9 @@
   </head>
 
   <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body
+    class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}{% if page.permalink == '/' and site.nav_enabled == false and site.enable_navbar_social == false %} navbar-empty{% endif %}"
+  >
     <!-- Header -->
     {% include header.liquid %}
 
