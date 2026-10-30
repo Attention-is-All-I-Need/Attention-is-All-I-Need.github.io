@@ -70,11 +70,11 @@ details.pub-details {
 }
 
 .pub-details-summary::marker {
-  content: '';
+  content: "";
 }
 
 .pub-details-summary::before {
-  content: '▸';
+  content: "▸";
   display: inline-block;
   transition: transform 0.2s ease;
 }

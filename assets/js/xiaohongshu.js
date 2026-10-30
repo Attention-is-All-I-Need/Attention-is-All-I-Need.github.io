@@ -19,4 +19,3 @@ function bindXhsModal(triggerId, modalId) {
 
 bindXhsModal("XHSBtn", "XHSMod");
 bindXhsModal("XHSBtnInline", "XHSModInline");
-

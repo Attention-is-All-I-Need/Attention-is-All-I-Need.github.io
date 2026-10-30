@@ -34,13 +34,14 @@ For foundation models, I have experience in <strong class="nowrap">pre-training<
 I am open to research collaborations; if you are interested in working together, please feel free to reach out via [email](mailto:weizeliu1115@gmail.com).
 
 {% comment %}
-  The X / LinkedIn / Rednote follow buttons are temporarily hidden.
-  To restore them identically: (1) fill in x_username, linkedin_username,
-  and xiaohongshu.url in _data/socials.yml; (2) remove the enclosing
-  Liquid comment tags around the markup below.
+The X / LinkedIn / Rednote follow buttons are temporarily hidden.
+To restore them identically: (1) fill in x_username, linkedin_username,
+and xiaohongshu.url in \_data/socials.yml; (2) remove the enclosing
+Liquid comment tags around the markup below.
 {% endcomment %}
 
 {% comment %}
+
 <div class="follow-link-grid">
   <a
     class="follow-link-button follow-link-button-x"
@@ -85,4 +86,5 @@ I am open to research collaborations; if you are interested in working together,
 </div>
 
 <script defer src="{{ '/assets/js/xiaohongshu.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
+
 {% endcomment %}

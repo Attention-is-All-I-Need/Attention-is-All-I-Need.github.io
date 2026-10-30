@@ -26,7 +26,10 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-10 pub-entry-content{% else %}col-sm-12 pub-entry-content{% endif %}">
+  <div
+    id="{{ entry.key }}"
+    class="{% if site.enable_publication_thumbnails %}col-sm-10 pub-entry-content{% else %}col-sm-12 pub-entry-content{% endif %}"
+  >
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -129,11 +132,11 @@
     </div>
 
     {% if entry.abbr %}
-      {% assign venue_note = "" %}
-      {% if entry.booktitle and entry.booktitle contains "Findings" %}
-        {% assign venue_note = " (Findings)" %}
-      {% elsif entry.journal and entry.journal contains "Findings" %}
-        {% assign venue_note = " (Findings)" %}
+      {% assign venue_note = '' %}
+      {% if entry.booktitle and entry.booktitle contains 'Findings' %}
+        {% assign venue_note = ' (Findings)' %}
+      {% elsif entry.journal and entry.journal contains 'Findings' %}
+        {% assign venue_note = ' (Findings)' %}
       {% endif %}
 
       {% assign venue_style = null %}
@@ -155,9 +158,17 @@
           {% endif -%}
         >
           {% if venue_url %}
-            <a href="{{ venue_url }}">{{ entry.abbr }}{% if entry.year %} {{ entry.year }}{% endif %}{{ venue_note }}</a>
+            <a href="{{ venue_url }}">
+              {{- entry.abbr -}}
+              {%- if entry.year %} {{ entry.year }}{% endif -%}
+              {{- venue_note -}}
+            </a>
           {% else %}
-            <span>{{ entry.abbr }}{% if entry.year %} {{ entry.year }}{% endif %}{{ venue_note }}</span>
+            <span>
+              {{- entry.abbr -}}
+              {%- if entry.year %} {{ entry.year }}{% endif -%}
+              {{- venue_note -}}
+            </span>
           {% endif %}
         </abbr>
       </div>
@@ -179,11 +190,11 @@
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
-    {% assign entrymonth = "" %}
+    {% assign entrymonth = '' %}
     {% if entry.year %}
       {% capture entryyear %}{{ entry.year }}{% endcapture %}
     {% else %}
-      {% assign entryyear = "" %}
+      {% assign entryyear = '' %}
     {% endif %}
     {% if entry.location %}
       {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
@@ -196,11 +207,11 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% assign venue_note = "" %}
-    {% if entry.booktitle and entry.booktitle contains "Findings" %}
-      {% assign venue_note = " (Findings)" %}
-    {% elsif entry.journal and entry.journal contains "Findings" %}
-      {% assign venue_note = " (Findings)" %}
+    {% assign venue_note = '' %}
+    {% if entry.booktitle and entry.booktitle contains 'Findings' %}
+      {% assign venue_note = ' (Findings)' %}
+    {% elsif entry.journal and entry.journal contains 'Findings' %}
+      {% assign venue_note = ' (Findings)' %}
     {% endif %}
     {% capture periodical %}
       {% if entrytype_text != "" %}
@@ -216,7 +227,7 @@
         {{ periodical | strip }}
       </div>
     {% endunless %}
-    {% if entry.note and entry.note != "* Equal contribution" %}
+    {% if entry.note and entry.note != '* Equal contribution' %}
       <div class="periodical">
         {{ entry.note | strip }}
       </div>
